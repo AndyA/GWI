@@ -14,8 +14,3 @@ find WAV* -not -name '.*' -iname '*.wav' | while read wav; do
     "$wav" "$tmp" && mv "$tmp" "$png" || rm -f "$tmp"
 
 done
-  
-
-
-# vim:ts=2:sw=2:sts=2:et:ft=sh
-
